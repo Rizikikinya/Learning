@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <div class="links">
-      <div>
-        <a href="index1.html">Images search</a>
-      </div>
-      <div>
-        <a href="index2.html">Advanced Search</a>
-      </div>
-    </div>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,21 +16,51 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-style.css" />
     <style></style>
   </head>
   <body>
+    <div class="links">
+      <div>
+        <a href="index.html">Google Search</a>
+      </div>
+      <div>
+        <a href="index1.html">Images search</a>
+      </div>
+    </div>
     <form action="https://www.google.com/search" class="form">
-      <h1>Google</h1>
+      <h1>Aadvanced Search Google</h1>
       <div class="buttons">
         <input
           type="text"
-          name="q"
-          placeholder="search google"
+          name="as_q"
+          placeholder="all these words"
           class="inputtext"
         />
+
+        <input
+          type="text"
+          name="as_epq"
+          placeholder="exact phrase"
+          class="inputtext"
+        />
+
+        <input
+          type="text"
+          name="as_oq"
+          placeholder="any of these words"
+          class="inputtext"
+        />
+
+        <input
+          type="text"
+          name="as_eq"
+          placeholder="none of these words"
+          class="inputtext"
+        />
+
         <input type="submit" value="Google Search" class="textsubmit" />
       </div>
-      <button>I am feeling lucky</button>
     </form>
   </body>
 </html>
